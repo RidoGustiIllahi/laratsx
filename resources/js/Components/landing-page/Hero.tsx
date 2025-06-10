@@ -10,16 +10,17 @@ export const Hero = () => {
         <div className="space-y-6 text-center lg:text-start">
           <main className="text-5xl font-bold md:text-6xl">
             <h1 className="inline">
-              Collaborate with ease and{" "}
+              Streamline Your{" "}
               <span className="inline bg-gradient-to-r from-primary via-primary to-primary-dark bg-clip-text text-transparent">
-                efficiency
+                Project Overflow
               </span>
             </h1>
           </main>
 
           <p className="mx-auto text-xl text-muted-foreground md:w-10/12 lg:mx-0">
-            Streamline your team's workflow with our intuitive project management
-            solution. Tasks, labels, and real-time collaboration - all in one place.
+            TaskFlow helps teams organize, track, and manage projects in one 
+            collaborative workspace. Boost productivity and deliver projects on time.
+
           </p>
 
           <div className="flex flex-col gap-4 md:flex-row md:justify-center md:gap-4 lg:justify-start">
@@ -28,12 +29,6 @@ export const Hero = () => {
                 Get Started
               </Button>
             </Link>
-            <a href="#features">
-              <Button variant="outline" size="lg" className="w-full md:w-auto">
-                <span>Learn more</span>
-                <ArrowDown className="h-5 w-5" />
-              </Button>
-            </a>
           </div>
         </div>
 

@@ -48,8 +48,7 @@ export const Navbar = () => {
         <NavigationMenuList className="container flex h-14 w-screen max-w-7xl items-center justify-between px-4">
           <NavigationMenuItem className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
-              <ApplicationLogo variant="circular" className="h-8 w-8" />
-              <span className="font-bold">TeamSync</span>
+              <span className="font-bold">TimBurnOut</span>
             </Link>
           </NavigationMenuItem>
 
@@ -68,8 +67,7 @@ export const Navbar = () => {
               <SheetContent side="right">
                 <SheetHeader>
                   <SheetTitle className="flex items-center gap-2">
-                    <ApplicationLogo variant="circular" className="h-8 w-8" />
-                    <span className="font-bold">TeamSync</span>
+                    <span className="font-bold">TimBurnOut</span>
                   </SheetTitle>
                   <SheetDescription className="sr-only">
                     Navigation menu
@@ -95,17 +93,6 @@ export const Navbar = () => {
                   <Link href={route("register")} className="w-full">
                     <Button className="w-full">Get Started</Button>
                   </Link>
-                  <a
-                    href="https://github.com/stekatag/project-management-app"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="w-full"
-                  >
-                    <Button variant="outline" className="w-full">
-                      <GitHubLogoIcon className="h-4 w-4" />
-                      GitHub
-                    </Button>
-                  </a>
                 </nav>
               </SheetContent>
             </Sheet>
@@ -125,22 +112,11 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden items-center gap-4 md:flex">
-            <a
-              href="https://github.com/stekatag/project-management-app"
-              target="_blank"
-              rel="noreferrer noopener"
-              className="hidden lg:flex"
-            >
-              <Button variant="outline" size="sm">
-                <GitHubLogoIcon className="h-4 w-4" />
-                GitHub
-              </Button>
-            </a>
             <Link href={route("login")}>
-              <Button variant="ghost">Sign in</Button>
+              <Button variant="ghost">Login</Button>
             </Link>
             <Link href={route("register")}>
-              <Button>Get Started</Button>
+              <Button>Register</Button>
             </Link>
             <ModeToggle />
           </div>

@@ -21,7 +21,7 @@ export const HeroCards = () => {
               <ListTodo className="h-6 w-6 text-primary" />
             </div>
             <div>
-              <CardTitle>Task Management</CardTitle>
+              <CardTitle>Project Management</CardTitle>
               <CardDescription className="mt-2">
                 Organize tasks efficiently with our intuitive project management
                 tools.
@@ -79,34 +79,23 @@ export const HeroCards = () => {
         <Card className="order-last w-full shadow-black/10 drop-shadow-xl dark:shadow-white/10 md:order-first">
           <CardHeader className="mt-8 flex items-center justify-center pb-2">
             <img
-              src="https://i.pravatar.cc/150?img=58"
+              src="/images/image.jpg"
               alt="Frontend Developer Avatar"
               className="absolute -top-8 aspect-square h-16 w-16 rounded-full object-cover sm:h-20 sm:w-20 md:h-24 md:w-24"
             />
             <CardTitle className="text-center">
-              Petko G.
-              <a
-                rel="noreferrer noopener"
-                href="https://github.com/leoMirandaa"
-                target="_blank"
-                className={buttonVariants({
-                  variant: "ghost",
-                  size: "sm",
-                })}
-              >
-                <span className="sr-only">Github icon</span>
-                <GitHubLogoIcon className="h-5 w-5" />
-              </a>
+              TimBurnOut
             </CardTitle>
+
             <CardDescription className="dark:text-primary-light font-normal text-primary">
-              Web Developer
+              IFB-210 Pemrograman Web Lanjut
             </CardDescription>
           </CardHeader>
           <CardContent className="pb-6 text-center">
-            <p>
-              "TeamSync has transformed how our development team manages projects and
-              collaborates."
-            </p>
+            <p>152023131 Viktorikus Nokia Laksamana Febrianto</p>
+            <p>152023135 Farisy Ilman Syarif</p>
+            <p>152023138 Fikriansyah</p>
+            <p>152023169 Rido Gusti Illahi</p>      
           </CardContent>
         </Card>
 

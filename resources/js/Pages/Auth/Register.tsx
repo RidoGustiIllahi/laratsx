@@ -139,34 +139,12 @@ export default function Register() {
                 href={route("login")}
                 className="inline-block text-sm text-muted-foreground underline"
               >
+              <div className="flex items-center gap-4">
+                <Separator className="flex-1" />
+              </div>
                 Already registered?
               </Link>
 
-              <div className="flex items-center gap-4">
-                <Separator className="flex-1" />
-                <span className="text-sm uppercase tracking-widest text-muted-foreground">
-                  or
-                </span>
-                <Separator className="flex-1" />
-              </div>
-              <Button
-                variant="outline"
-                className="w-full"
-                type="button"
-                onClick={() => handleSocialLogin("google")}
-              >
-                <FaGoogle />
-                <span>Sign in with Google</span>
-              </Button>
-              <Button
-                variant="outline"
-                type="button"
-                className="w-full"
-                onClick={() => handleSocialLogin("github")}
-              >
-                <FaGithub />
-                <span>Sign in with Github</span>
-              </Button>
             </div>
           </form>
         </CardContent>

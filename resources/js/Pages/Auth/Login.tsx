@@ -46,16 +46,6 @@ export default function Login({
     });
   };
 
-  const handleSocialLogin = async (provider: string) => {
-    try {
-      const response = await fetch(route("socialite.redirect", { provider }));
-      const data = await response.json();
-      window.location.href = data.url;
-    } catch (error) {
-      console.error("Error during social login:", error);
-    }
-  };
-
   return (
     <AuthFlowLayout>
       <Head title="Log in" />
@@ -137,31 +127,7 @@ export default function Login({
                 <LogIn />
                 <span>Login</span>
               </Button>
-              <div className="flex items-center gap-4">
-                <Separator className="flex-1" />
-                <span className="text-sm uppercase tracking-widest text-muted-foreground">
-                  or
-                </span>
-                <Separator className="flex-1" />
-              </div>
-              <Button
-                variant="outline"
-                className="w-full"
-                type="button"
-                onClick={() => handleSocialLogin("google")}
-              >
-                <FaGoogle />
-                <span>Sign in with Google</span>
-              </Button>
-              <Button
-                variant="outline"
-                type="button"
-                className="w-full"
-                onClick={() => handleSocialLogin("github")}
-              >
-                <FaGithub />
-                <span>Sign in with Github</span>
-              </Button>
+              <Separator className="my-4" />
             </div>
           </form>
         </CardContent>

@@ -16,11 +16,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <About />
-        <Features />
-        <Testimonials />
-        <FAQ />
-        <Cta />
       </main>
       <Footer />
       <ScrollToTop />

@@ -31,10 +31,9 @@ export default function AuthFlowLayout({ children }: PropsWithChildren) {
     <div className="flex min-h-screen flex-col items-center bg-secondary pt-6 sm:justify-center">
       <div>
         <Link href="/" className="flex items-center justify-center gap-3">
-          <ApplicationLogo variant="circular" className="h-16 w-16" />
           <div className="flex flex-col items-center">
-            <h2 className="text-3xl font-extrabold text-foreground">TeamSync</h2>
-            <p className="text-sm text-muted-foreground">Your team, your way.</p>
+            <h2 className="text-3xl font-extrabold text-foreground">TimBurnOut</h2>
+            <p className="text-sm text-muted-foreground">IFB-202</p>
           </div>
         </Link>
       </div>
